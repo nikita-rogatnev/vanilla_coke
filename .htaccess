@@ -1,0 +1,6 @@
+<IfModule mod_rewrite.c>
+Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^vanilla-coke.ru$ [NC]
+RewriteRule ^(.*)$ http://www.vanilla-coke.ru/$1 [R=301,L]
+</IfModule>
